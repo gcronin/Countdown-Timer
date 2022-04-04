@@ -15211,8 +15211,6 @@ drill 1.0 mm</description>
 <part name="IC7" library="74xx-eu" deviceset="74*32" device="N" technology="LS"/>
 <part name="ONES" library="display-hp" deviceset="HD-H101" device=""/>
 <part name="TENS" library="display-hp" deviceset="HD-H101" device=""/>
-<part name="R1" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
-<part name="R2" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/5" value="10k"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0204/5" value="22k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/5" value="22k"/>
@@ -15265,8 +15263,6 @@ drill 1.0 mm</description>
 <instance part="IC7" gate="D" x="-15.24" y="147.32" rot="R180"/>
 <instance part="ONES" gate="M" x="93.98" y="124.46" rot="R270"/>
 <instance part="TENS" gate="M" x="93.98" y="93.98" rot="R270"/>
-<instance part="R1" gate="G$1" x="-2.54" y="116.84"/>
-<instance part="R2" gate="G$1" x="-10.16" y="78.74"/>
 <instance part="R3" gate="G$1" x="-40.64" y="111.76" rot="R90"/>
 <instance part="R4" gate="G$1" x="-78.74" y="185.42" rot="R90"/>
 <instance part="R5" gate="G$1" x="-76.2" y="149.86" rot="R90"/>
@@ -15422,13 +15418,14 @@ drill 1.0 mm</description>
 <wire x1="-15.24" y1="119.38" x2="-58.42" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="119.38" x2="-58.42" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-58.42" y="106.68"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="78.74" x2="-15.24" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="116.84" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="116.84" x2="-15.24" y2="116.84" width="0.1524" layer="91"/>
 <junction x="-15.24" y="116.84"/>
 <junction x="-15.24" y="119.38"/>
+<pinref part="IC4" gate="A" pin="PE"/>
+<wire x1="-15.24" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="A" pin="PE"/>
+<wire x1="-15.24" y1="116.84" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -15596,20 +15593,6 @@ drill 1.0 mm</description>
 <wire x1="-7.62" y1="187.96" x2="20.32" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="187.96" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC3" gate="A" pin="PE"/>
-<wire x1="2.54" y1="116.84" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="IC4" gate="A" pin="PE"/>
-<wire x1="-5.08" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
